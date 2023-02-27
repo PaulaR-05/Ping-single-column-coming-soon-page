@@ -23,6 +23,8 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
 }
 
 img,
@@ -54,4 +56,9 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
 }
