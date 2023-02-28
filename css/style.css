@@ -180,7 +180,6 @@ button:hover {
     max-width: 1440px;
   }
   .main-content h1 {
-    font-size: 30px;
     font-weight: 300;
     color: var(--Gray);
     margin-top: 0.5em;
@@ -190,26 +189,29 @@ button:hover {
     color: var(--Very-Dark);
   }
   .logo-content {
-    margin: 1em auto;
-    width: 40px;
+    margin: 0.5em auto;
+    width: 50px;
   }
   label {
-    margin: 1em;
+    margin: 0.5em;
     display: flex;
     justify-content: center;
   }
 
   input {
     width: 30%;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 0.3em 1em;
+    border-color: var(--blue);
     cursor: pointer;
+    opacity: 0.5;
+    margin-right: 0.2em;
   }
   button {
     cursor: pointer;
     margin: 0 auto;
     border-radius: 30px;
-    padding: 0.75em 4em;
+    padding: 0.75em 3em;
     background-color: var(--blue);
     color: white;
     font-size: 15px;
@@ -221,8 +223,7 @@ button:hover {
 
   .ilust-dashboard img {
     margin: 1em auto 0;
-    width: 50%;
-    height: 5%;
+    width: 45%;
   }
   .social-icon {
     display: flex;
@@ -241,6 +242,7 @@ button:hover {
   }
 
   .copy-content p {
+    margin-top: 0.5em;
     color: var(--Gray);
     font-size: 16px;
     font-weight: 300;
