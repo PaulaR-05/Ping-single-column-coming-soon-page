@@ -1,3 +1,12 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark: hsl(209, 33%, 12%);
+  --font-family: "Libre Franklin", sans-serif;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -58,7 +67,65 @@ h6 {
   isolation: isolate;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 864px) {
   body {
+    text-align: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-family);
+  }
+  .main-content {
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+  .logo-content {
+    margin: 2em auto 0;
+    width: 50px;
+  }
+  .main-content h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--Gray);
+    margin-top: 1em;
+  }
+  .main-content h1 span {
+    font-weight: 700;
+    color: var(--Very-Dark);
+  }
+  label {
+    margin-top: 0.5em;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  input {
+    border-color: var(--blue);
+    margin: 0 auto;
+    margin-top: 1.7em;
+    border-radius: 30px;
+    width: 85%;
+    padding: 0.4em 1.8em;
+    font-size: 16px;
+    color: var(--Gray);
+    font-weight: 300;
+    font-family: var(--font-family);
+  }
+  button {
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 0.5em 1.8em;
+    background-color: var(--blue);
+    color: white;
+    font-size: 15px;
+    width: 85%;
+    font-weight: 300;
+    border: none;
+    font-family: var(--font-family);
+    margin-top: 0.5em;
+  }
+  .ilust-dashboard img {
+    margin: 2em auto 0;
+    width: 80%;
   }
 }

@@ -15,19 +15,41 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+    </link>
     <title>Frontend Mentor | Ping coming soon page</title>
   </head>
   <body>
-    <main>
-      <img src="images/logo.svg" alt="" />
+    <main class="main-content">
+      <img
+        class="logo-content"
+        src="images/logo.svg"
+        alt=""
+        aria-hidden="true"
+      />
       <div class="main-content">
         <h1>We are launching <span>soon!</span></h1>
-        <p>Subscribe and get notified</p>
-        <input type="email" />
+        <label for="email"> Subscribe and get notified! </label>
+        <input
+          placeholder="Your email address..."
+          type="email"
+          id="email"
+          name="email"
+        />
         <button>Notify Me</button>
         <div class="ilust-dashboard">
-          <img src="images/illustration-dashboard.png" alt="" />
+          <img
+            src="images/illustration-dashboard.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <div class="social-icon">
+            <div class="media-icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="media-icon"><i class="fab fa-twitter"></i></div>
+            <div class="media-icon"><i class="fab fa-instagram"></i></div>
+          </div>
           <p>&copy; Copyright Ping. All rights reserved.</p>
         </div>
       </div>
