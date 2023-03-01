@@ -11,7 +11,7 @@ btnS.addEventListener("click", function () {
   if (emailInput.value.length === 0) {
     errorMessage.style.display = "block";
     errorMessage.style.color = "#ff5263";
-    errorMessage.innerHTML =
+    errorMessage.textContent =
       "Whoops!🙁 It looks like you forgot to add your email";
     timeOut;
   } else if (
@@ -20,12 +20,12 @@ btnS.addEventListener("click", function () {
   ) {
     errorMessage.style.display = "block";
     errorMessage.style.color = "#ff5263";
-    errorMessage.innerHTML = "Please provide a valid email address 🚩";
+    errorMessage.textContent = "Please provide a valid email address 🚩";
     timeOut;
   } else {
     errorMessage.style.display = "block";
     errorMessage.style.color = "green";
-    errorMessage.innerHTML = "We sent you a gift, check it out! 🎁";
+    errorMessage.textContent = "We sent you a gift, check it out! 🎁";
     timeOut;
   }
 });
