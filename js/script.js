@@ -5,7 +5,7 @@ const checkEmailform = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 const timeOut = setInterval(() => {
   errorMessage.style.display = "none";
-}, 5000);
+}, 3500);
 
 btnS.addEventListener("click", function () {
   if (emailInput.value.length === 0) {
